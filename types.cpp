@@ -4,10 +4,12 @@
 int main()
 {
     int _hey = 0;
+    std::string str = "hello";
     std::cout<<_hey;
     std::cout<<sizeof(int);
     std::cout<<sizeof(bool);
     std::cout<<sizeof(char);
+    std::cout<<sizeof(str);
     return 0;
 }
 
