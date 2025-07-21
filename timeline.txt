@@ -1,2 +1,2 @@
-Done till character liters introduction
-Time- 1:7:13
+Done till pointers and references
+Time: 1hrs 34mins
