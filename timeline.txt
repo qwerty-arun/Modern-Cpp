@@ -1,2 +1,2 @@
-Done till pointers and references
-Time: 1hrs 34mins
+Done till qualifiers 
+Time: 3hrs 39mins
