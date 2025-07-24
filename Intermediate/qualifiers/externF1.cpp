@@ -1,0 +1,1 @@
+int globalVar = 10;  // Definition: allocates memory
