@@ -22,7 +22,11 @@ int main()
     donald.email = "donald@huh.com"; //we can change value
     // donald.uId = 400;
 
+    d->name = "Arun";
+    d->course_count = 20;
     cout << d->course_count<<endl;
     cout << d->name<<endl;
+    cout << donald.course_count<<endl;
+    cout << donald.name<<endl;
     return 0;
 }
