@@ -20,7 +20,7 @@ int main()
     cout << mickey.email<<endl;
     donald.course_count = 4;
     donald.email = "donald@huh.com"; //we can change value
-    // donald.uId = 400;
+    // donald.uId = 400; //Error
 
     d->name = "Arun";
     d->course_count = 20;

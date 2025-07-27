@@ -15,7 +15,7 @@ int main()
     } catch(float y){ //We can have as many catches as we want
         cout<<"Float exception handled\n";
     }
-    // What if we can't predice the type of error?
+    // What if we can't predict the type of error?
     catch(...)
     {
         cout<<"Something went wrong\n";

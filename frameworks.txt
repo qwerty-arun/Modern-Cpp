@@ -1,0 +1,9 @@
+1. cpp-httplib
+2. LAME MP3 encoder
+3. Crow
+4. Kore
+5. qdjango
+6. CppCMS
+7. wt (webtoolkit)
+8. mongo-cxx-driver
+9. JSON.h
