@@ -1,2 +1,2 @@
-Done till overloading 
-Time: 5hrs 9mins
+Done till getters and setters
+Time: 6hrs 33mins
