@@ -17,7 +17,7 @@ int main()
     void (*pointer)() = interesting; //just points to interesting, not running it
 
     cout<<huh<<endl;
-    pointer();
-    (*pointer)();
+    pointer(); //notation1
+    (*pointer)(); //notation2
     return 0;
 }
