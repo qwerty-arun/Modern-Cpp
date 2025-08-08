@@ -5,7 +5,7 @@ using namespace std;
 
 template <typename T>
 T sum(T a[], int length) {
-    T ret = a[0];
+    T ret = a[0]; //this is an important step
     for (int i = 1; i < length; i++)
         ret += a[i];
     return ret;
