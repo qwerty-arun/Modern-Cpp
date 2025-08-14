@@ -1,0 +1,93 @@
+### 🧰 **Level 1: Basic Function Templates**
+
+1. **Swap Function**
+
+   * Write a template function to swap two variables of any type.
+
+2. **Max Function**
+
+   * Write a function template `maxOf` that returns the maximum of two values.
+
+3. **Array Sum**
+
+   * Write a template function that calculates the sum of elements in an array of any type.
+
+---
+
+### 🧱 **Level 2: Class Templates**
+
+4. **Generic Pair**
+
+   * Create a template class `Pair<T1, T2>` that stores two values of potentially different types.
+
+5. **Stack Implementation**
+
+   * Write a class template `Stack<T>` with push, pop, top, and size methods.
+
+6. **Generic Vector**
+
+   * Build a simple `Vector<T>` class with dynamic memory (mimic `std::vector` behavior).
+
+---
+
+### 🧠 **Level 3: Specialization and Constraints**
+
+7. **Template Specialization**
+
+   * Specialize a `print()` template for `std::string` to add quotes around output.
+
+8. **Enable if / SFINAE**
+
+   * Use `std::enable_if` to restrict a function template to arithmetic types only.
+
+9. **Type Traits**
+
+   * Write a function `isIntegralType()` that checks if a type is integral using `std::is_integral`.
+
+---
+
+### 🔄 **Level 4: Variadic Templates**
+
+10. **Print Variadic Arguments**
+
+* Write a function `printAll()` that prints any number of arguments of any type.
+
+11. **Sum Variadic Arguments**
+
+* Write a variadic template function `sum()` that returns the sum of all arguments.
+
+12. **Tuple-like Struct**
+
+* Implement a recursive template that simulates a tuple structure (e.g., `MyTuple<int, double, string>`).
+
+---
+
+### 🧩 **Level 5: Template Metaprogramming**
+
+13. **Factorial at Compile Time**
+
+* Write a template metafunction to compute factorial at compile time.
+
+14. **Compile-time GCD**
+
+* Write a template that computes GCD of two numbers at compile time.
+
+15. **Conditional Type**
+
+* Implement a `my_conditional<condition, T, U>::type` that selects a type based on a boolean condition.
+
+---
+
+### 🚀 **Bonus Challenges**
+
+16. **Type-safe Any Container**
+
+* Build a class template that can store any type and retrieve it safely (like a simplified `std::any`).
+
+17. **Policy-based Design**
+
+* Use class templates to implement a `Logger` class that accepts different logging policies.
+
+18. **CRTP (Curiously Recurring Template Pattern)**
+
+* Use CRTP to implement static polymorphism.

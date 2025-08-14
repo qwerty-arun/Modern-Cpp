@@ -1,0 +1,5 @@
+/*
+Factorial at Compile Time
+
+Write a template metafunction to compute factorial at compile time.
+*/

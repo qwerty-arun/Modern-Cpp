@@ -1,0 +1,100 @@
+## 🧰 **Level 1: Basics + Function Templates**
+
+1. **Bank Account with Generic Transactions**
+
+   * Class: `BankAccount` (encapsulation: private balance, public deposit/withdraw)
+   * Use **function template** `transferFunds<T>` to transfer money between any account types (e.g., `SavingsAccount`, `CheckingAccount`).
+
+2. **Generic Rectangle**
+
+   * Class: `Rectangle<T>` — template class so `length` and `width` can be `int`, `float`, or `double`.
+   * Methods: `area()`, `perimeter()`
+   * Show both default & parameterized constructors.
+
+---
+
+## 🧱 **Level 2: Constructors + Class Templates**
+
+3. **Generic Stack**
+
+   * Template class `Stack<T>` with `push`, `pop`, `top`, `isEmpty`.
+   * Show deep copy using copy constructor.
+   * Use it with `int`, `double`, and a custom class (like `Point`).
+
+4. **Dynamic Array with Type Constraints**
+
+   * Template class `Array<T>` with dynamic allocation.
+   * Use `std::enable_if` to allow only arithmetic types.
+
+---
+
+## 🧠 **Level 3: Inheritance + Templates**
+
+5. **Shape Hierarchy with Templates**
+
+   * Base class: `Shape<T>` (template) with pure virtual `area()`.
+   * Derived: `Circle<T>`, `Rectangle<T>`, `Triangle<T>`.
+   * Demonstrate polymorphism with `Shape<double>*` pointing to different shapes.
+
+6. **Employee Database**
+
+   * Template class `Employee<IDType>` for storing employee details with generic ID (int, string, UUID).
+   * Derived classes: `Manager`, `Developer` that extend functionality.
+
+---
+
+## 🔄 **Level 4: Operator Overloading + Templates**
+
+7. **Complex Number**
+
+   * Template class `Complex<T>`
+   * Overload `+`, `-`, `*`, `==`, and `<<`.
+   * Test with both `int` and `double` types.
+
+8. **Generic Math Utilities**
+
+   * Template function `power(T base, U exp)` (function overloading for integer power, floating power).
+   * Use with a class `Polynomial` to raise it to a power.
+
+---
+
+## 🧩 **Level 5: Advanced OOP + Templates**
+
+9. **Media Player**
+
+   * Abstract template class `Media<T>` with pure virtual `play()` and `stop()`.
+   * Derived: `Audio<T>`, `Video<T>` — `T` might be file path type (`std::string`) or file descriptor (`int`).
+
+10. **Tuple-like Game Character System**
+
+    * Template `Character<NameType, HPType, DamageType>`
+    * Derived: `Warrior`, `Mage`, `Archer`
+    * Variadic template for storing inventory items.
+
+---
+
+## 🚀 **Bonus Challenges**
+
+11. **Smart Pointer for Any Class**
+
+    * Template class `SharedPointer<T>` with reference counting.
+    * Use with different OOP classes (`Car`, `Bike`).
+
+12. **Policy-based Logger**
+
+    * Template `Logger<Policy>` where `Policy` could be `ConsolePolicy` or `FilePolicy`.
+    * Use CRTP to add a static counter of logs.
+
+---
+
+If you solve this combined set, you’ll basically cover:
+✔ Encapsulation
+✔ Inheritance & Polymorphism
+✔ Operator Overloading
+✔ Abstract Classes & Interfaces
+✔ Function Templates
+✔ Class Templates
+✔ Specialization
+✔ SFINAE / enable\_if
+✔ Variadic Templates
+✔ CRTP

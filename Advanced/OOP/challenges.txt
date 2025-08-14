@@ -1,0 +1,114 @@
+## 🧰 **Level 1: Basics & Encapsulation**
+
+1. **Bank Account**
+
+   * Create a `BankAccount` class with:
+
+     * Private: `accountNumber`, `balance`
+     * Public: methods to deposit, withdraw, and get balance.
+     * Ensure balance can’t go negative.
+
+2. **Rectangle**
+
+   * Class with `length` and `width`
+   * Methods: `area()`, `perimeter()`
+   * Use constructors (default + parameterized).
+
+3. **Student Report**
+
+   * Store `name`, `rollNumber`, and marks in 3 subjects.
+   * Calculate total and percentage.
+   * Use getters & setters for validation.
+
+---
+
+## 🧱 **Level 2: Constructors, Destructors, Static Members**
+
+4. **Counter Class**
+
+   * A class with a static data member counting how many objects have been created.
+
+5. **Dynamic Array Class**
+
+   * Create a class that stores an array dynamically (allocate in constructor, free in destructor).
+   * Support setting & getting values.
+
+6. **Car Class**
+
+   * Demonstrate constructor overloading and copy constructor.
+
+---
+
+## 🧠 **Level 3: Inheritance**
+
+7. **Shape Hierarchy**
+
+   * Base: `Shape` with `draw()` and `area()` as virtual.
+   * Derived: `Circle`, `Rectangle`, `Triangle`.
+
+8. **Employee Hierarchy**
+
+   * Base: `Employee` (name, salary)
+   * Derived: `Manager`, `Developer`
+   * Override a method `displayDetails()`.
+
+9. **Multiple Inheritance**
+
+   * `Printer` class and `Scanner` class
+   * `AllInOnePrinter` inherits from both.
+
+---
+
+## 🔄 **Level 4: Polymorphism & Overloading**
+
+10. **Operator Overloading**
+
+    * Create a `Complex` number class.
+    * Overload `+`, `-`, `*`, `==`, and `<<` for printing.
+
+11. **Function Overloading**
+
+    * Create a `Math` class with overloaded `power()` for `int`, `double`, and `(base, exponent, modulus)`.
+
+12. **Virtual Functions**
+
+    * Create an `Animal` base class with `makeSound()` virtual.
+    * Override in `Dog`, `Cat`, `Cow`.
+
+---
+
+## 🧩 **Level 5: Advanced OOP Concepts**
+
+13. **Abstract Class**
+
+    * Abstract `Media` class with pure virtual methods `play()` and `stop()`.
+    * Derived: `Audio` and `Video`.
+
+14. **Interface Simulation**
+
+    * Use pure virtual functions to simulate an interface `Flyable` and `Swimmable`.
+
+15. **Friend Functions**
+
+    * Class `Box` with private dimensions.
+    * A friend function `compareVolume(Box, Box)`.
+
+---
+
+## 🚀 **Bonus Challenges**
+
+16. **Smart Pointer Simulation**
+
+    * Implement a simple `SharedPointer<T>` class (reference counting).
+
+17. **CRTP + OOP**
+
+    * Use CRTP for a base class that counts instances of any derived class.
+
+18. **Game Character System**
+
+    * Base `Character`
+    * Derived `Warrior`, `Mage`, `Archer`
+    * Use polymorphism for `attack()` and `specialMove()`.
+
+---
