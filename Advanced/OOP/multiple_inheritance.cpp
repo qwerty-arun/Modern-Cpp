@@ -1,20 +1,21 @@
 /*
-friend comes with caution
-In professional code, you don't see this as it is flawed.
+Public: Base class, Derived class and others
+Protected: Base class and Derived class
+Private: Only Base class
 */
 
 #include<iostream>
 #include<string>
 using namespace std;
 
+class Money{
+public:
+    void gotMoney(){puts("Got 5K rupees in my account");}
+};
 class Man{
     string _name;
     int _age;
     Man(){}
-
-    friend class Superman; //not secure, just use protected
-    friend class Spiderman;
-
 protected:
     Man(const string& name, const int& age): _name(name), _age(age){}
 
@@ -28,12 +29,12 @@ void Man::sayName() const
     cout << "My name is: "<< _name << " and age is: "<<_age <<endl;
 }
 
-class Superman : public Man
+class Superman : public Man, public Money
 {
     bool flight;
 public:
     Superman(string name) : Man(name, 26){}
-    void run(){printf("I can run at light speed %d\n", _age);}
+    void run(){puts("I can run at light speed");}
 };
 
 class Spiderman: public Man
@@ -41,7 +42,7 @@ class Spiderman: public Man
     bool webbing;
 public:
     Spiderman(string name) : Man(name, 19){}
-    void run(){printf("I can run at light speed %d\n", _age);}
+    void run(){puts("I can run at normal speed");}
 };
 
 int main()
@@ -49,6 +50,7 @@ int main()
     Superman clark("Kent");
     clark.sayName();
     clark.run();
+    clark.gotMoney();
 
     Spiderman peter("Peter");
     peter.sayName();

@@ -1,2 +1,2 @@
 Done till getters and setters
-Time: 7hrs 8mins
+Time: 7hrs 45mins
