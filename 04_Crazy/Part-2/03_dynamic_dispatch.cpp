@@ -28,7 +28,7 @@ public:
 int main() {
     Base* basePtr = new Derived(); // Base pointer pointing to a Derived object
     basePtr->greet(); // Dynamic dispatch: calls Derived::greet()
-    delete basePtr;
+    // delete basePtr;
 
     Base baseObj;
     baseObj.greet(); // Static dispatch: calls Base::greet()
