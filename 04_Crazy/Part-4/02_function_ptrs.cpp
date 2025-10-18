@@ -31,6 +31,9 @@ int main()
     // Define a function pointer type for operations
     typedef int (*OperationFunc)(int, int);
 
+    // using keyword, we can define an alias
+    // using OperationFunc = int(*)(int, int);
+
     // Array of function pointers (function table)
     OperationFunc operations[] = {add, subtract, multiply, divide};
 
